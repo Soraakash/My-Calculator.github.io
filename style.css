@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(90deg, #9c8c8c 0,#7e87c1 58%);
+}
+body h1{
+    text-align: center;
+    font-family: 'Alice', serif;
+    font-size: 50px;
+    color: #1e1b1b;
+    padding-top: 25px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background: #edc0bf;
+    background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%); */
+    /* background: linear-gradient(90deg, #9c8c8c 0,#7e87c1 58%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: rgba( 255, 255, 255, 0.25 );
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius:15px;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.24);
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.25);
+    /* box-shadow: -8px -8px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2); */
+    border-radius: 15px;
+    margin: 5px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1; /* For full Width */
+    box-shadow: none;
+    font-size: 40px;
+}
+
+form input.equal{
+    width: 135px;
+}
